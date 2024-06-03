@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body>
+    <form name="fform">
+        <table border="1" align="center" width="50%">
+            <tr>
+                <td colspan="2">
+                    <h2 align="center">Biodata Mahasiswa</h2>
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <td width="50%">
+                    <h3 align="center">Input Data</h3>
+                    <pre>
+Nama            : <input type="text" size="20" name="inama"><br>
+NIM             : <input type="number" size="20" name="inim"><br>
+Program Studi   : <input type="text" size="20" name="iprodi"><br>
+Fakultas        : <input type="text" size="20" name="ifak"><br>
+Tanggal Lahir   : <input type="date" name="itl"><br>
+Jenis Kelamin   : <input type="radio" name="ijkel" value="laki">Laki-laki<input type="radio" name="ijkel" value="perempuan">Perempuan <br>
+Agama           : <select name="iagama" size="1">
+    <option value="Islam">Islam</option>
+    <option value="Kristen">Kristen</option>
+    <option value="Hindu">Hindu</option>
+    <option value="Buddha">Buddha</option>
+    <option value="Konghucu">Konghucu</option>
+</select><br>
+Email           : <input type="email" size="20" name="iemail"><br>
+No Telepon/HP   : <input type="number" size="20" name="ihp"><br>
+Alamat          : <textarea name="ialamat"></textarea><br>
+</pre>
+
+    <center>
+        <input type="button" value="Submit" onclick="output()">
+    </center>
+</td>
+<tr>
+                    <td width="50%">
+                        <h3 align="center">Output Data</h3>
+                    <pre>
+Nama            : <input type="text" size="20" name="onama"><br>
+NIM             : <input type="number" size="20" name="onim"><br>
+Program Studi   : <input type="text" size="20" name="oprodi"><br>
+Fakultas        : <input type="text" size="20" name="ofak"><br>
+Tanggal Lahir   : <input type="text" size="20" name="otl"><br>
+Jenis Kelamin   : <input type="text" size="20" name="ojkel"><br>
+Agama           : <input type="text" size="20" name="oagama"><br>
+Email           : <input type="email" size="20" name="oemail"><br>
+No Telepon/HP   : <input type="number" size="20" name="ohp"><br>
+Alamat          : <textarea name="oalamat" size="20"></textarea>
+                    </pre>
+                    <center>
+                        <input type="reset" value="Reset">
+                    </center>
+                </td>
+            </tr>
+        </tr>
+        </table>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
